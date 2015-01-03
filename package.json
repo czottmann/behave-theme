@@ -1,0 +1,21 @@
+{
+  "name": "behave-theme",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A port of Christian Petersen' Textmate Behave theme.",
+  "repository": "https://github.com/carlo/behave-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "contributors": [
+    {
+      "name": "Carlo Zottmann",
+      "email": "carlo@zottmann.org"
+    },
+    {
+      "name": "Christian Petersen",
+      "email": "chrs@cbp.io"
+    }
+  ]
+}
