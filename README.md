@@ -1,8 +1,8 @@
 # Behave syntax theme
 
-A conversion of [Christian Petersen' Textmate Behave theme](https://github.com/fnky/behave-theme).
+A port of [Christian Petersen' Textmate Behave theme](https://github.com/fnky/behave-theme).
 
-The theme was created by converting it from the Textmate theme, then _slightly_
+This port was created by converting it from the Textmate theme, then _slightly_
 adjusting gutter margin & color to my liking.
 
 
