@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "A port of Christian Petersen' Textmate Behave theme.",
   "repository": "https://github.com/carlo/behave-theme",
-  "license": "MIT",
+  "license": "WTFPL",
   "engines": {
     "atom": ">0.50.0"
   },
