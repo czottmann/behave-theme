@@ -2,7 +2,7 @@
   "name": "behave-theme",
   "theme": "syntax",
   "version": "1.1.0",
-  "description": "A port of Christian Petersen' Textmate Behave theme.",
+  "description": "An easy-on-the-eyes dark syntax theme. A port of Christian Petersen' Textmate Behave theme.",
   "repository": "https://github.com/carlo/behave-theme",
   "license": "WTFPL",
   "engines": {
