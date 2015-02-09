@@ -1,3 +1,8 @@
+## 1.3.0
+
+* Replaced deprecated CSS selectors.  Thanks, @briannhinton!
+
+
 ## 1.0.0 - First Release
 
 * Converted Textmate theme
