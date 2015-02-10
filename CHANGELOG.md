@@ -6,7 +6,8 @@
 
 ## 1.3.0
 
-* [CHG] Replaced deprecated CSS selectors.  Thanks, @briannhinton!
+* [CHG] Replaced deprecated CSS selectors.  Thanks,
+  [briannhinton](https://github.com/briannhinton)!
 
 
 ## 1.0.0 - First Release
