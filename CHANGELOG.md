@@ -1,3 +1,8 @@
+## 1.6.0
+
+* [FIX] Fixed gutter margin.
+
+
 ## 1.5.0
 
 * [CHG] Renamed internal folder `stylesheets/` to `styles/`.
