@@ -1,67 +1,66 @@
 @import "syntax-variables";
 
-:host,
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-:host .gutter:last-child,
+.syntax--gutter:last-child,
 atom-text-editor .gutter:last-child {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
   margin-right: 5px;
 }
 
-:host .gutter .line-number.cursor-line,
+.syntax--gutter .line-number.cursor-line,
 atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-:host .gutter .line-number.cursor-line-no-selection,
+.syntax--gutter .line-number.cursor-line-no-selection,
 atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-:host .wrap-guide,
+.syntax--wrap-guide,
 atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-:host .indent-guide,
+.syntax--indent-guide,
 atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-:host .invisible-character,
+.syntax--invisible-character,
 atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-:host .search-results .marker .region,
+.syntax--search-results .marker .region,
 atom-text-editor .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-:host .search-results .marker.current-result .region,
+.syntax--search-results .marker.current-result .region,
 atom-text-editor .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-:host .cursor,
+.syntax--cursor,
 atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-:host .selection .region,
+.syntax--selection .region,
 atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-:host .line-number.cursor-line-no-selection,
-:host .line.cursor-line,
+.syntax--line-number.cursor-line-no-selection,
+.syntax--line.cursor-line,
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
 atom-text-editor.is-focused .line.cursor-line {
   background-color: #232932;
