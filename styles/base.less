@@ -1,332 +1,323 @@
 @import "syntax-variables";
 
-:host,
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-:host .gutter:last-child,
 atom-text-editor .gutter:last-child {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
   margin-right: 5px;
 }
 
-:host .gutter .line-number.cursor-line,
 atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-:host .gutter .line-number.cursor-line-no-selection,
 atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-:host .wrap-guide,
 atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-:host .indent-guide,
 atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-:host .invisible-character,
 atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-:host .search-results .marker .region,
-atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-:host .search-results .marker.current-result .region,
-atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-:host .cursor,
+atom-text-editor .cursor,
 atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-:host .selection .region,
+atom-text-editor .selection .region,
 atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-:host .line-number.cursor-line-no-selection,
-:host .line.cursor-line,
+atom-text-editor .line-number.cursor-line-no-selection,
+atom-text-editor .line.cursor-line,
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
 atom-text-editor.is-focused .line.cursor-line {
   background-color: #232932;
 }
 
-.comment,
-.string.quoted.double.block.python {
+.syntax--comment,
+.syntax--string.syntax--quoted.syntax--double.syntax--block.syntax--python {
   color: #808691;
 }
 
-.constant.other,
-.keyword.operator.class,
-.source.php.embedded.line {
+.syntax--constant.syntax--other,
+.syntax--keyword.syntax--operator.syntax--class,
+.syntax--source.syntax--php.syntax--embedded.line {
   color: #CED1CF;
 }
 
-.declaration.tag,
-.meta.expression.body.function,
-.meta.method,
-.meta.property,
-.string.other.link,
-.string.regexp,
-.support.other.variable,
-.variable,
-.variable.other,
-.variable.parameter,
-.variable.parameter {
+.syntax--declaration.syntax--tag,
+.syntax--meta.syntax--expression.syntax--body.syntax--function,
+.syntax--meta.syntax--method,
+.syntax--meta.syntax--property,
+.syntax--string.syntax--other.syntax--link,
+.syntax--string.syntax--regexp,
+.syntax--support.syntax--other.syntax--variable,
+.syntax--variable,
+.syntax--variable.syntax--other,
+.syntax--variable.syntax--parameter,
+.syntax--variable.syntax--parameter {
   color: #cab8a3;
 }
 
-.constant.language,
-.constant.numeric,
-.keyword.other.unit,
-.meta.property-value,
-.punctuation.section.embedded,
-.support.constant {
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--numeric,
+.syntax--keyword.syntax--other.syntax--unit,
+.syntax--meta.syntax--property-value,
+.syntax--punctuation.syntax--section.syntax--embedded,
+.syntax--support.syntax--constant {
   color: #c9a9f9;
 }
 
-.class.name,
-.entity.name.class,
-.entity.name.type.class,
-.meta.class,
-.meta.instance.constructor,
-.meta.property.class,
-.support.class,
-.support.type,
-.variable.other.class,
-.variable.other.class {
+.syntax--class.syntax--name,
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class,
+.syntax--meta.syntax--class,
+.syntax--meta.syntax--instance.syntax--constructor,
+.syntax--meta.syntax--property.syntax--class,
+.syntax--support.syntax--class,
+.syntax--support.syntax--type,
+.syntax--variable.syntax--other.syntax--class,
+.syntax--variable.syntax--other.syntax--class {
   color: #f0d879;
 }
 
-.constant.other.symbol,
-.entity.other.inherited-class,
-.string {
+.syntax--constant.syntax--other.syntax--symbol,
+.syntax--entity.syntax--other.syntax--inherited-class,
+.syntax--string {
   color: #ec9076;
 }
 
-.meta.brace.curly,
-.meta.brace.round,
-.meta.brace.square,
-.meta.delimiter,
-.meta.delimiter.method.period,
-.meta.delimiter.object.comma,
-.punctuation.definition.parameters,
-.punctuation.definition.parameters.begin,
-.punctuation.definition.parameters.end,
-.punctuation.separator.parameter,
-.punctuation.terminator.statement {
+.syntax--meta.syntax--brace.syntax--curly,
+.syntax--meta.syntax--brace.syntax--round,
+.syntax--meta.syntax--brace.syntax--square,
+.syntax--meta.syntax--delimiter,
+.syntax--meta.syntax--delimiter.syntax--method.syntax--period,
+.syntax--meta.syntax--delimiter.syntax--object.syntax--comma,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--end,
+.syntax--punctuation.syntax--separator.syntax--parameter,
+.syntax--punctuation.syntax--terminator.syntax--statement {
   color: #D2D8E1;
 }
 
-.constant.character,
-.constant.other.color,
-.entity.other.attribute-name,
-.keyword.operator {
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other.syntax--color,
+.syntax--entity.syntax--other.syntax--attribute-name,
+.syntax--keyword.syntax--operator {
   color: #7dcbc4;
 }
 
-.entity.name.accessor,
-.entity.name.function,
-.entity.name.method,
-.function.name,
-.keyword.other.special-method,
-.meta.block-level,
-.meta.function-call,
-.meta.function.static,
-.support.function {
+.syntax--entity.syntax--name.syntax--accessor,
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--method,
+.syntax--function.syntax--name,
+.syntax--keyword.syntax--other.syntax--special-method,
+.syntax--meta.syntax--block-level,
+.syntax--meta.syntax--function-call,
+.syntax--meta.syntax--function.syntax--static,
+.syntax--support.syntax--function {
   color: #61d29d;
 }
 
-.entity.name.tag,
-.entity.name.tag.css,
-.keyword,
-.meta.tag,
-.storage,
-.storage.type,
-.variable.language.super,
-.variable.language.this {
+.syntax--entity.syntax--name.syntax--tag,
+.syntax--entity.syntax--name.syntax--tag.syntax--css,
+.syntax--keyword,
+.syntax--meta.syntax--tag,
+.syntax--storage,
+.syntax--storage.syntax--type,
+.syntax--variable.syntax--language.syntax--super,
+.syntax--variable.syntax--language.syntax--this {
   color: #5ab8e5;
 }
 
-.meta.expression.body.function {
+.syntax--meta.syntax--expression.syntax--body.syntax--function {
   color: #61d29d;
 }
 
-.meta.class,
-.meta.expression.body.class {
+.syntax--meta.syntax--class,
+.syntax--meta.syntax--expression.syntax--body.syntax--class {
   color: #f0d879;
 }
 
-.meta.toc-list.class.member.ts {
+.syntax--meta.syntax--toc-list.syntax--class.syntax--member.syntax--ts {
   color: #cab8a3;
 }
 
-.punctuation.definition.string.ts {
+.syntax--punctuation.syntax--definition.syntax--string.syntax--ts {
   color: #ec9076;
 }
 
-.keyword.operator.ts,
-.meta.brace.curly.ts,
-.meta.brace.round.ts,
-.meta.brace.square.ts,
-.meta.delimiter.method.period.ts,
-.meta.delimiter.object.comma.ts,
-.meta.delimiter.ts,
-.punctuation.definition.parameters.begin.ts,
-.punctuation.definition.parameters.end.ts,
-.punctuation.definition.parameters.ts,
-.punctuation.terminator.statement.ts {
+.syntax--keyword.syntax--operator.syntax--ts,
+.syntax--meta.syntax--brace.syntax--curly.syntax--ts,
+.syntax--meta.syntax--brace.syntax--round.syntax--ts,
+.syntax--meta.syntax--brace.syntax--square.syntax--ts,
+.syntax--meta.syntax--delimiter.syntax--method.syntax--period.syntax--ts,
+.syntax--meta.syntax--delimiter.syntax--object.syntax--comma.syntax--ts,
+.syntax--meta.syntax--delimiter.syntax--ts,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin.syntax--ts,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--end.syntax--ts,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--ts,
+.syntax--punctuation.syntax--terminator.syntax--statement.syntax--ts {
   color: #D2D8E1;
 }
 
-.string.quoted.double.json,
-.meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json,
-.meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json {
+.syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: #cab8a3;
 }
 
-.meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json,
-.meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: #ec9076;
 }
 
-.markup.heading,
-.markup.heading.markdown {
+.syntax--markup.syntax--heading,
+.syntax--markup.syntax--heading.syntax--markdown {
   color: #f0d879;
 }
 
-.markup.list.numbered.markdown,
-.markup.list.unnumbered.markdown {
+.syntax--markup.syntax--list.syntax--numbered.syntax--markdown,
+.syntax--markup.syntax--list.syntax--unnumbered.syntax--markdown {
   color: #D2D8E1;
 }
 
-.markup.bold.markdown,
-.markup.italic.markdown {
+.syntax--markup.syntax--bold.syntax--markdown,
+.syntax--markup.syntax--italic.syntax--markdown {
   color: #FFFFFF;
 }
 
-.markup.italic.markdown {
+.syntax--markup.syntax--italic.syntax--markdown {
   font-style: italic;
 }
 
-.markup.bold.markdown {
+.syntax--markup.syntax--bold.syntax--markdown {
   font-weight: bold;
 }
 
-.markup.raw.inline.markdown,
-.markup.raw.block.markdown {
+.syntax--markup.syntax--raw.syntax--inline.syntax--markdown,
+.syntax--markup.syntax--raw.syntax--block.syntax--markdown {
   color: #cab8a3;
 }
 
-.string.other.link.description.title.markdown,
-.string.other.link.title.markdown {
+.syntax--string.syntax--other.syntax--link.syntax--description.syntax--title.syntax--markdown,
+.syntax--string.syntax--other.syntax--link.syntax--title.syntax--markdown {
   color: #61d29d;
 }
 
-.markup.underline.link.image.markdown,
-.markup.underline.link.markdown,
-.meta.image.inline.markdown {
+.syntax--markup.syntax--underline.syntax--link.syntax--image.syntax--markdown,
+.syntax--markup.syntax--underline.syntax--link.syntax--markdown,
+.syntax--meta.syntax--image.syntax--inline.syntax--markdown {
   font-style: italic;
   color: #c9a9f9;
 }
 
-.markup.quote.markdown {
+.syntax--markup.syntax--quote.syntax--markdown {
   color: #ec9076;
 }
 
-.constant.numeric.line-number.find-in-files:not(.match) {
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match) {
   color: rgba(201, 169, 249, 0.63);
 }
 
-.entity.name.filename.find-in-files {
+.syntax--entity.syntax--name.syntax--filename.syntax--find-in-files {
   color: #f0d879;
 }
 
-.invalid {
+.syntax--invalid {
   color: #D2D8E1;
   background-color: #EF4D44;
 }
 
-.meta.separator {
+.syntax--meta.syntax--separator {
   color: #7dcbc4;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
   color: #CED2CF;
   background-color: #B798BF;
 }
 
-.markup.deleted.diff,
-.markup.inserted.diff,
-.meta.diff.header.from-file,
-.meta.diff.header.to-file {
+.syntax--markup.syntax--deleted.syntax--diff,
+.syntax--markup.syntax--inserted.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header.syntax--from-file,
+.syntax--meta.syntax--diff.syntax--header.syntax--to-file {
   color: #D2D8E1;
 }
 
-.markup.inserted.diff,
-.meta.diff.header.to-file {
+.syntax--markup.syntax--inserted.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header.syntax--to-file {
   color: #A6E22E;
 }
 
-.markup.deleted.diff,
-.meta.diff.header.from-file {
+.syntax--markup.syntax--deleted.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header.syntax--from-file {
   color: #EF4D44;
 }
 
-.meta.diff.header.from-file,
-.meta.diff.header.to-file {
+.syntax--meta.syntax--diff.syntax--header.syntax--from-file,
+.syntax--meta.syntax--diff.syntax--header.syntax--to-file {
   color: #D2D8E1;
   background-color: #4271ae;
 }
 
-.meta.diff.range {
+.syntax--meta.syntax--diff.syntax--range {
   font-style: italic;
   color: #7dcbc4;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: #F92672;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   color: #A6E22E;
 }
 
-.markup.changed {
+.syntax--markup.syntax--changed {
   color: #967EFB;
 }
 
-.sublimelinter.mark.error {
+.sublimelinter.syntax--mark.syntax--error {
   color: #EF4D44;
 }
 
@@ -334,6 +325,6 @@ atom-text-editor.is-focused .line.cursor-line {
   color: #D2D8E1;
 }
 
-.sublimelinter.mark.warning {
+.sublimelinter.syntax--mark.syntax--warning {
   color: #FACB68;
 }
